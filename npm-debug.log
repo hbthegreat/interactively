@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   '-g',
+1 verbose cli   'rm',
+1 verbose cli   'bower',
+1 verbose cli   'cleverstack-cli',
+1 verbose cli   'eslint',
+1 verbose cli   'firebase-tools',
+1 verbose cli   'grunt-cli',
+1 verbose cli   'npm',
+1 verbose cli   'sails' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 verbose lib/node_modules/bower unbuild
+6 verbose lib/node_modules/cleverstack-cli unbuild
+7 verbose lib/node_modules/eslint unbuild
+8 verbose lib/node_modules/grunt-cli unbuild
+9 verbose lib/node_modules/firebase-tools unbuild
+10 verbose lib/node_modules/npm unbuild
+11 verbose lib/node_modules/sails unbuild
+12 info preuninstall bower@1.7.2
+13 info preuninstall cleverstack-cli@1.2.7
+14 info preuninstall eslint@1.10.3
+15 info preuninstall grunt-cli@0.1.13
+16 info preuninstall firebase-tools@2.1.0
+17 info preuninstall sails@0.11.3
+18 info uninstall bower@1.7.2
+19 info uninstall cleverstack-cli@1.2.7
+20 info uninstall eslint@1.10.3
+21 info uninstall grunt-cli@0.1.13
+22 info uninstall firebase-tools@2.1.0
+23 info uninstall sails@0.11.3
+24 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild bower@1.7.2
+25 verbose /usr/bin,[object Object] binRoot
+26 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild cleverstack-cli@1.2.7
+27 verbose /usr/bin,[object Object] binRoot
+28 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild eslint@1.10.3
+29 verbose /usr/bin,[object Object] binRoot
+30 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild grunt-cli@0.1.13
+31 verbose /usr/bin,[object Object] binRoot
+32 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild firebase-tools@2.1.0
+33 verbose /usr/bin,[object Object] binRoot
+34 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild sails@0.11.3
+35 verbose /usr/bin,[object Object] binRoot
+36 info preuninstall npm@1.4.28
+37 info uninstall npm@1.4.28
+38 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild npm@1.4.28
+39 verbose /usr/bin,[object Object] binRoot
+40 error Error: EACCES, unlink '/usr/bin/bower'
+40 error  { [Error: EACCES, unlink '/usr/bin/bower'] errno: 3, code: 'EACCES', path: '/usr/bin/bower' }
+41 error Please try running this command again as root/Administrator.
+42 error System Linux 3.19.0-42-generic
+43 error command "/usr/bin/node" "/usr/bin/npm" "-g" "rm" "bower" "cleverstack-cli" "eslint" "firebase-tools" "grunt-cli" "npm" "sails"
+44 error cwd /home/hbthegreat/Documents/interactively
+45 error node -v v0.10.40
+46 error npm -v 1.4.28
+47 error path /usr/bin/bower
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, unlink '/usr/bin/bower'
+51 verbose exit [ 3, true ]
