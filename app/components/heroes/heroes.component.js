@@ -41,7 +41,7 @@ System.register(['angular2/core', '../../components/hero-detail/hero-detail.comp
                 };
                 HeroesComponent.prototype.onSelect = function (hero) { this.selectedHero = hero; };
                 HeroesComponent.prototype.gotoDetail = function () {
-                    this._router.navigate(['HeroDetail', { id: this.selectedHero.id }]);
+                    this._router.navigate(['DeckBuilder', { name: this.selectedHero.name }]);
                 };
                 HeroesComponent = __decorate([
                     core_1.Component({

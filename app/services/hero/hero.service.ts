@@ -12,4 +12,9 @@ export class HeroService {
       heroes => heroes.filter(hero => hero.id === id)[0]
     );
   }
+  getHeroByName(name: string){
+    return Promise.resolve(HEROES).then(
+      heroes => heroes.filter(hero => hero.name === name)[0]
+    );
+  }
 }

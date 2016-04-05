@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../../services/hero/hero.service', '../../components/heroes/heroes.component', '../../components/dashboard/dashboard.component', '../../components/hero-detail/hero-detail.component', '../../components/home/home.component', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core', '../../services/hero/hero.service', '../../services/card/card.service', '../../components/heroes/heroes.component', '../../components/dashboard/dashboard.component', '../../components/hero-detail/hero-detail.component', '../../components/home/home.component', '../../components/deck-builder/deck-builder.component', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', '../../services/hero/hero.service', '../../com
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hero_service_1, heroes_component_1, dashboard_component_1, hero_detail_component_1, home_component_1, router_1;
+    var core_1, hero_service_1, card_service_1, heroes_component_1, dashboard_component_1, hero_detail_component_1, home_component_1, deck_builder_component_1, router_1;
     var AppComponent;
     return {
         setters:[
@@ -19,6 +19,9 @@ System.register(['angular2/core', '../../services/hero/hero.service', '../../com
             },
             function (hero_service_1_1) {
                 hero_service_1 = hero_service_1_1;
+            },
+            function (card_service_1_1) {
+                card_service_1 = card_service_1_1;
             },
             function (heroes_component_1_1) {
                 heroes_component_1 = heroes_component_1_1;
@@ -31,6 +34,9 @@ System.register(['angular2/core', '../../services/hero/hero.service', '../../com
             },
             function (home_component_1_1) {
                 home_component_1 = home_component_1_1;
+            },
+            function (deck_builder_component_1_1) {
+                deck_builder_component_1 = deck_builder_component_1_1;
             },
             function (router_1_1) {
                 router_1 = router_1_1;
@@ -47,7 +53,8 @@ System.register(['angular2/core', '../../services/hero/hero.service', '../../com
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
-                            hero_service_1.HeroService
+                            hero_service_1.HeroService,
+                            card_service_1.CardService
                         ],
                         styleUrls: ['app/components/app/app.component.css']
                     }),
@@ -72,6 +79,11 @@ System.register(['angular2/core', '../../services/hero/hero.service', '../../com
                             path: '/detail/:id',
                             name: 'HeroDetail',
                             component: hero_detail_component_1.HeroDetailComponent
+                        },
+                        {
+                            path: 'deck-builder/:name',
+                            name: 'DeckBuilder',
+                            component: deck_builder_component_1.DeckBuilderComponent
                         }
                     ]), 
                     __metadata('design:paramtypes', [])

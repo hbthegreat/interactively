@@ -1,9 +1,11 @@
 import { Component }       from 'angular2/core';
 import { HeroService }     from '../../services/hero/hero.service';
+import { CardService }     from '../../services/card/card.service';
 import { HeroesComponent } from '../../components/heroes/heroes.component';
 import { DashboardComponent } from  '../../components/dashboard/dashboard.component';
 import { HeroDetailComponent } from '../../components/hero-detail/hero-detail.component';
 import { HomeComponent } from '../../components/home/home.component';
+import { DeckBuilderComponent } from '../../components/deck-builder/deck-builder.component';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 @Component({
@@ -20,7 +22,8 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
   directives: [ROUTER_DIRECTIVES],
   providers: [
     ROUTER_PROVIDERS,
-    HeroService
+    HeroService,
+    CardService
   ],
   styleUrls: ['app/components/app/app.component.css']
 })
@@ -46,6 +49,11 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
     path: '/detail/:id',
     name: 'HeroDetail',
     component: HeroDetailComponent
+  },
+  {
+    path: 'deck-builder/:name',
+    name: 'DeckBuilder',
+    component: DeckBuilderComponent
   }
 ])
 export class AppComponent {

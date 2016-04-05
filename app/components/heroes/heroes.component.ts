@@ -25,6 +25,6 @@ export class HeroesComponent implements OnInit {
   }
   onSelect(hero: Hero) { this.selectedHero = hero; }
   gotoDetail() {
-    this._router.navigate(['HeroDetail', { id: this.selectedHero.id }]);
+    this._router.navigate(['DeckBuilder', { name: this.selectedHero.name }]);
   }
 }

@@ -30,6 +30,9 @@ System.register(['angular2/core', '../../mocks/heroes/mock-heroes'], function(ex
                 HeroService.prototype.getHero = function (id) {
                     return Promise.resolve(mock_heroes_1.HEROES).then(function (heroes) { return heroes.filter(function (hero) { return hero.id === id; })[0]; });
                 };
+                HeroService.prototype.getHeroByName = function (name) {
+                    return Promise.resolve(mock_heroes_1.HEROES).then(function (heroes) { return heroes.filter(function (hero) { return hero.name === name; })[0]; });
+                };
                 HeroService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
